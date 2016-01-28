@@ -1,0 +1,11 @@
+body {
+	background: #fff;
+}
+.list-slide li {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	border: 1px solid #ccc;
+	background: #f7f7f7;
+	overflow: hidden;
+}
