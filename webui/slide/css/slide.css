@@ -4,6 +4,12 @@ html, body {
 	background: #fff;
 }
 
+.container {
+	position:relative;
+	width:500px;
+	margin:0 auto;
+}
+
 #slider {
 	position: relative;
 	width: 500px;
@@ -59,8 +65,38 @@ span.control_next {
 }
 
 .slider_option {
-	position: relative;
-	margin: 10px auto;
-	width: 110px;
-	font-size: 18px;
+	position: absolute;
+	right:10px;
+	top:10px;
+	font-size: 25px;
+	z-index:10;
+
+}
+
+input[id='checkbox'] {
+	display:none;
+}
+
+.btn_checkbox {
+	cursor:pointer;
+}
+
+input[id="checkbox"]:checked + label:after {
+	
+}
+
+.slider_option:hover .tooltip {
+	display:block;
+}
+
+.tooltip {
+	display:none;
+	position:absolute;
+	left:-15px;
+	top:-25px;
+	border:1px solid #aaa;
+	border-radius:5px;
+	padding:2px 5px 4px;
+	background:#F4EDED;
+	font-size:14px;
 }

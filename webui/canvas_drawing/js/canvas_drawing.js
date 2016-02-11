@@ -98,7 +98,6 @@ function drawing(event) {
 	}
 }
 function drawEnd(event) {
-	ctx.closePath();
 	flag = false;
 }
 
