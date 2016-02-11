@@ -98,6 +98,7 @@ function drawing(event) {
 	}
 }
 function drawEnd(event) {
+	ctx.closePath();
 	flag = false;
 }
 
@@ -137,9 +138,9 @@ function btns(e) {
 	$(".btn-yellow").click(function() {
 		ctx.strokeStyle = "#EFFF00";
 	});
-	$(".btn-eraser").click(function() {
-		ctx.strokeStyle = "#ffffff";
-	});
+	// $(".btn-eraser").click(function() {
+	// 	ctx.strokeStyle = "#ffffff";
+	// });
 }
 
 
