@@ -26,11 +26,11 @@ $(document).ready(function () {
 		};
 	};
 
-	$('.card-wrap').append(html);
+	$('.card_wrap').append(html);
 
-	$('.card-wrap li').append('<button class="btn_x">X</button>');
+	$('.card_wrap li').append('<button class="btn_x">X</button>');
 
-	$('.card-wrap li').click(function(e) {
+	$('.card_wrap li').click(function(e) {
 		var target = $(e.target);
 		var targetBtn = target.children();
 		target.addClass('selected');
