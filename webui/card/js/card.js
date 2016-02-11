@@ -32,13 +32,16 @@ $(document).ready(function () {
 
 	$('.card-wrap li').click(function(e) {
 		var target = $(e.target);
+		var targetBtn = target.children();
 		target.addClass('selected');
 		target.siblings(target).removeClass('selected');
+		targetBtn.css('display', 'block');
 	});
 
 	$('.btn_x').click(function(e) {
 		var target = $(e.target).parent();
 		target.removeClass('selected');
+		$('.btn_x').css('display', 'none');
 	})
 
 });
