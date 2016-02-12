@@ -7,7 +7,7 @@ $(document).ready(function () {
 	var str;
     var autoPlay = null;
 	
-	$('#slider').css({ width: slideWidth, height: slideHeight }.);			
+	$('#slider').css({ width: slideWidth, height: slideHeight });			
 	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
 	$('#slider ul li:last-child').prependTo('#slider ul');
 	
