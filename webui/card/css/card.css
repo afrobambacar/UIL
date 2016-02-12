@@ -8,7 +8,7 @@ ul, li {list-style: none}
 .card_wrap li .btn_x:hover {font-weight:bold;}
 
 
-.card-wrap li.selected {
+.card_wrap li.selected {
 	animation-name:card;
 	animation-duration:0.5s;
 	animation-fill-mode: forwards;
