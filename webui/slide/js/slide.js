@@ -7,7 +7,7 @@ $(document).ready(function () {
 	var str;
     var autoPlay = null;
 	
-	// $('#slider').css({ width: slideWidth, height: slideHeight });			
+	$('#slider').css({ width: slideWidth, height: slideHeight }.);			
 	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
 	$('#slider ul li:last-child').prependTo('#slider ul');
 	
@@ -40,8 +40,12 @@ $(document).ready(function () {
     $('#checkbox').change(function () {
         if($('#checkbox').is(':checked') == true) {
             autoPlay = setInterval(moveRight, 2000);
+            $('.btn_checkbox').html('&#x275A &#x275A');
+            $('.txt').html('stopPlay');
         } else {
             clearInterval(autoPlay);
+            $('.btn_checkbox').html('&#x25B6');
+            $('.txt').html('autoPlay');
         };
     });
 });

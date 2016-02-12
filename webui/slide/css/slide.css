@@ -66,8 +66,8 @@ span.control_next {
 
 .slider_option {
 	position: absolute;
-	right:10px;
-	top:10px;
+	right:12px;
+	top:5px;
 	font-size: 25px;
 	z-index:10;
 
@@ -79,10 +79,7 @@ input[id='checkbox'] {
 
 .btn_checkbox {
 	cursor:pointer;
-}
-
-input[id="checkbox"]:checked + label:after {
-	
+	letter-spacing:-4px;
 }
 
 .slider_option:hover .tooltip {
@@ -92,11 +89,20 @@ input[id="checkbox"]:checked + label:after {
 .tooltip {
 	display:none;
 	position:absolute;
-	left:-15px;
-	top:-25px;
-	border:1px solid #aaa;
+	left:-9px;
+	top:-27px;
+	border:1px solid #777;
 	border-radius:5px;
 	padding:2px 5px 4px;
-	background:#F4EDED;
+	background:#777;
 	font-size:14px;
+	color:#fff;
+}
+
+.d01 {
+	position:absolute;
+	left:11px;
+	bottom:-13px;
+	font-size:18px;
+	color:#777;
 }
