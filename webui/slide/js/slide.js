@@ -39,9 +39,9 @@ $(document).ready(function () {
 
     $('#checkbox').change(function () {
         if($('#checkbox').is(':checked') == true) {
-            autoPlay = setInterval(moveRight, 2000);
+            autoPlay = setInterval(moveRight, 1000); // auto play 초 조절
             $('.btn_checkbox').html('&#x275A &#x275A');
-            $('.txt').html('stopPlay');
+            $('.txt').html('stop');
         } else {
             clearInterval(autoPlay);
             $('.btn_checkbox').html('&#x25B6');
