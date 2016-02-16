@@ -2,16 +2,6 @@ var canvas;
 var ctx;
 var flag = false;
 
-$(document).ready(function() {
-
-	canvas = document.getElementById('canvas');
-	ctx = canvas.getContext("2d");
-
-	document.getElementById("loadImg").addEventListener("change", loadImg, false);
-
-	webReady();
-	btns();
-});
 
 //web
 function webReady() {
@@ -19,6 +9,8 @@ function webReady() {
 	canvas.onmousedown = drawStart;
 	canvas.onmousemove = drawing;
 	window.onmouseup = drawEnd;
+
+	btns();
 }
 
 function loadImg (event) {
@@ -91,6 +83,17 @@ function drawing(event) {
 function drawEnd(event) {
 	flag = false;
 }
+
+
+$(document).ready(function() {
+
+	canvas = document.getElementById('canvas');
+	ctx = canvas.getContext("2d");
+
+	document.getElementById("loadImg").addEventListener("change", loadImg, false);
+
+	webReady();
+});
 
 	
 

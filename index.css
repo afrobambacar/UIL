@@ -2,6 +2,7 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fi
 	margin:0;
 	padding:0;
 }
+ul, li {list-style:none;}
 iframe {border:0; padding:0; margin:0;}
 
 body {position:absolute; left:0; top:0; bottom:0; right:0; min-width:1180px; overflow:hidden; background:#DDFEF3;}
