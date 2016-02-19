@@ -1,5 +1,5 @@
 *{padding:0; margin:0;}
-.top {position:relative; width:655px; padding:10px;}
+.top {position:relative; width:655px; padding:10px; margin:0 auto;}
 .top .btns {display:inline-block; padding: 5px 0;}
 .top button {display:inline-block; padding:6px 10px; border:1px solid #ccc; color:#777; cursor:pointer;}
 .color button {text-indent:-9999px; overflow:hidden;}
@@ -11,4 +11,4 @@
 .btn-yellow {background:#EFFF00;}
 .top .bar {display:inline-block; width:1px; height:20px; margin:0 5px; vertical-align: middle; background:#ccc; }
 
-#canvas {display:block; border: 1px solid #ccc; cursor:crosshair; margin:5px;}
+#canvas {display:block; border: 1px solid #ccc; cursor:crosshair; margin:10px auto;}
