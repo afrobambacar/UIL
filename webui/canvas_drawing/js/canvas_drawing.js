@@ -9,29 +9,29 @@ function webReady () {
 	canvas.onmousemove = drawing;
 	window.onmouseup = drawEnd;
 
-	var drawStart = function (event) {
+}
+
+var drawStart = function (event) {
 		ctx.beginPath();
 		var xpos = event.target.offsetLeft;
 		var ypos = event.target.offsetTop;
 		ctx.moveTo(event.clientX-xpos, event.clientY-ypos);
 		flag = true;
-	}
-
-	var drawing = function (event) {
-		if (flag) {
-			var xpos = event.target.offsetLeft;
-			var ypos = event.target.offsetTop;
-			ctx.lineCap = "round";
-			ctx.lineTo(event.clientX-xpos, event.clientY-ypos);
-			ctx.stroke();
-		}
-	}
-
-	var drawEnd = function (event) {
-		flag = false;
-	}
-
 }
+
+var drawing = function (event) {
+	if (flag) {
+		var xpos = event.target.offsetLeft;
+		var ypos = event.target.offsetTop;
+		ctx.lineCap = "round";
+		ctx.lineTo(event.clientX-xpos, event.clientY-ypos);
+		ctx.stroke();
+	}
+}
+
+var drawEnd = function (event) {
+	flag = false;
+}		
 
 // 내 컴 이미지 불러오기
 function loadImg (event) {
