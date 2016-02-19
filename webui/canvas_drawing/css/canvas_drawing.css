@@ -1,8 +1,8 @@
 *{padding:0; margin:0;}
-.top {margin:0 10px;}
+.top {position:relative; width:655px; padding:10px;}
 .top .btns {display:inline-block; padding: 5px 0;}
-.top button {display:inline-block; padding:0 20px; height:20%; border:1px solid #ccc; color:#777; cursor:pointer;}
-.color button {width:17%; height:20%; text-indent:-9999px; overflow:hidden;}
+.top button {display:inline-block; padding:6px 10px; border:1px solid #ccc; color:#777; cursor:pointer;}
+.color button {text-indent:-9999px; overflow:hidden;}
 .btn-black {background:#000000;}
 .btn-glay {background:#cccccc;}
 .btn-red {background:#FF00C8;}
@@ -10,4 +10,5 @@
 .btn-green {background:#B4FF00;}
 .btn-yellow {background:#EFFF00;}
 .top .bar {display:inline-block; width:1px; height:20px; margin:0 5px; vertical-align: middle; background:#ccc; }
+
 #canvas {display:block; border: 1px solid #ccc; cursor:crosshair; margin:5px;}

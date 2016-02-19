@@ -1,31 +1,31 @@
-$(document).ready(function () {
+function slide () {
 
-	var slideCount = $('#slider ul li').length;
-	var slideWidth = $('#slider ul li').width();
-	var slideHeight = $('#slider ul li').height();
+	var slideCount = $('.slider ul li').length;
+	var slideWidth = $('.slider ul li').width();
+	var slideHeight = $('.slider ul li').height();
 	var sliderUlWidth = slideCount * slideWidth;
 	var str;
     var autoPlay = null;
 	
-	$('#slider').css({ width: slideWidth, height: slideHeight });			
-	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-	$('#slider ul li:last-child').prependTo('#slider ul');
+	$('.slider').css({ width: slideWidth, height: slideHeight });			
+	$('.slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	$('.slider ul li:last-child').prependTo('.slider ul');
 	
-    function moveLeft() {
-        $('#slider ul').animate({
+    var moveLeft = function () {
+        $('.slider ul').animate({
             left: + slideWidth
         }, 200, function () {
-            $('#slider ul li:last-child').prependTo('#slider ul');
-            $('#slider ul').css('left', '');
+            $('.slider ul li:last-child').prependTo('.slider ul');
+            $('.slider ul').css('left', '');
         });
     };
 
-    function moveRight() {
-        $('#slider ul').animate({
+    var moveRight = function () {
+        $('.slider ul').animate({
             left: - slideWidth
         }, 200, function () {
-            $('#slider ul li:first-child').appendTo('#slider ul');
-            $('#slider ul').css('left', '');
+            $('.slider ul li:first-child').appendTo('.slider ul');
+            $('.slider ul').css('left', '');
         });
     };
 
@@ -37,6 +37,7 @@ $(document).ready(function () {
         moveRight();
     });
 
+    // autoplay 실행
     $('#checkbox').change(function () {
         if($('#checkbox').is(':checked') == true) {
             autoPlay = setInterval(moveRight, 1000); // auto play 초 조절
@@ -48,4 +49,9 @@ $(document).ready(function () {
             $('.txt').html('autoPlay');
         };
     });
+
+};
+
+$(document).ready(function (){
+    slide();
 });
